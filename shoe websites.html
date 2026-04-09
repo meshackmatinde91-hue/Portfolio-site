@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeStore - New Collection 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%); }
+        .sale-gradient { background: linear-gradient(90deg, #ff4d4d 0%, #f97316 100%); }
+        .testimonial-card { border-bottom: 8px solid #f97316; }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white px-6 py-4 flex items-center justify-between sticky top-0 z-50 shadow-sm">
+        <div class="flex items-center space-x-12">
+            <svg class="w-12 h-12" viewBox="0 0 24 24" fill="black"><path d="M21 12l-18 4 2-10z"/></svg>
+            <div class="hidden md:flex space-x-6 font-semibold text-sm">
+                <a href="#" class="hover:text-orange-500">Home</a>
+                <a href="#" class="hover:text-orange-500">Men</a>
+                <a href="#" class="hover:text-orange-500">Women</a>
+                <a href="#" class="hover:text-orange-500">Kids</a>
+                <a href="#" class="hover:text-orange-500">Sale</a>
+                <a href="#" class="hover:text-orange-500">Chats</a>
+            </div>
+        </div>
+        <div class="flex items-center space-x-5">
+            <i data-lucide="search" class="w-5 h-5 cursor-pointer"></i>
+            <i data-lucide="heart" class="w-5 h-5 cursor-pointer"></i>
+            <div class="relative">
+                <i data-lucide="shopping-bag" class="w-5 h-5 cursor-pointer"></i>
+                <span class="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] rounded-full w-4 h-4 flex items-center justify-center font-bold">2</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-gradient px-6 py-12 md:py-20 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-10">
+            <div class="z-10">
+                <h2 class="text-xl font-bold tracking-widest text-gray-800 uppercase mb-2">New Collection 2026</h2>
+                <h1 class="text-6xl md:text-8xl font-black italic text-gray-900 leading-tight mb-8">Step Into <br>Style</h1>
+                <button class="bg-zinc-900 text-white px-10 py-4 font-bold rounded hover:bg-black transition">Shop Now</button>
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=1000" alt="Main Shoe" class="w-full h-auto drop-shadow-2xl transform rotate-[-15deg] hover:rotate-0 transition-transform duration-700">
+                <div class="absolute -bottom-10 -right-10 bg-orange-500/20 w-64 h-64 rounded-full blur-3xl -z-10"></div>
+            </div>
+        </div>
+
+        <!-- Category Grid -->
+        <div class="max-w-7xl mx-auto mt-20 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow-sm group cursor-pointer">
+                <p class="font-bold mb-2">Men</p>
+                <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-contain group-hover:scale-110 transition">
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm group cursor-pointer">
+                <p class="font-bold mb-2">Women</p>
+                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-contain group-hover:scale-110 transition">
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm group cursor-pointer">
+                <p class="font-bold mb-2">Running</p>
+                <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-contain group-hover:scale-110 transition">
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-sm group cursor-pointer">
+                <p class="font-bold mb-2">Kids</p>
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-contain group-hover:scale-110 transition">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="bg-zinc-900 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                <!-- Product Card 1 -->
+                <div class="bg-white text-zinc-900 p-6 rounded-xl flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-contain mb-4">
+                    <h3 class="font-bold text-lg">Air Max Bro</h3>
+                    <p class="text-gray-600 mb-4 font-semibold">$120</p>
+                    <button class="bg-zinc-900 text-white py-2 rounded font-bold hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="bg-white text-zinc-900 p-6 rounded-xl flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-contain mb-4">
+                    <h3 class="font-bold text-lg">Classic Runner</h3>
+                    <p class="text-gray-600 mb-4 font-semibold">$89</p>
+                    <button class="bg-zinc-900 text-white py-2 rounded font-bold hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="bg-white text-zinc-900 p-6 rounded-xl flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-contain mb-4">
+                    <h3 class="font-bold text-lg">Sporty Sneakers</h3>
+                    <p class="text-gray-600 mb-4 font-semibold">$150</p>
+                    <button class="bg-zinc-900 text-white py-2 rounded font-bold hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="bg-white text-zinc-900 p-6 rounded-xl flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&q=80&w=400" class="w-full h-48 object-contain mb-4">
+                    <h3 class="font-bold text-lg">Casual Kicks</h3>
+                    <p class="text-gray-600 mb-4 font-semibold">$75</p>
+                    <button class="bg-zinc-900 text-white py-2 rounded font-bold hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Sale Banner -->
+            <div class="sale-gradient p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase italic tracking-tighter">Summer Sale</h2>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <p class="text-3xl font-black uppercase">Up To <span class="text-6xl">40% Off</span></p>
+                    <button class="bg-zinc-900 text-white px-8 py-3 font-bold rounded hover:bg-black transition">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS & NEWSLETTER -->
+    <section class="bg-zinc-900 text-white py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-10">What Our Customers Say</h2>
+            <div class="grid md:grid-cols-2 gap-8 mb-24">
+                <div class="bg-white text-zinc-900 p-8 rounded-xl testimonial-card">
+                    <div class="flex text-orange-500 mb-4">
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    </div>
+                    <p class="text-xl font-bold mb-4 italic">"Amazing comfort and quality!"</p>
+                    <p class="text-gray-500 font-semibold">— Sarah K.</p>
+                </div>
+                <div class="bg-white text-zinc-900 p-8 rounded-xl testimonial-card">
+                    <div class="flex text-orange-500 mb-4">
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                        <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    </div>
+                    <p class="text-xl font-bold mb-4 italic">"Best sneakers I've ever bought!"</p>
+                    <p class="text-gray-500 font-semibold">— Jason M.</p>
+                </div>
+            </div>
+
+            <!-- Newsletter Box -->
+            <div class="relative rounded-3xl overflow-hidden h-80 flex items-center p-12">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=1200" class="absolute inset-0 w-full h-full object-cover brightness-50">
+                <div class="relative z-10 max-w-md">
+                    <h2 class="text-4xl font-black mb-2 leading-tight">Join Our Newsletter</h2>
+                    <p class="text-gray-300 mb-6 font-medium">Sign up for exclusive offers & updates</p>
+                    <div class="flex bg-white rounded-lg p-1">
+                        <input type="email" placeholder="Email address" class="flex-1 px-4 py-2 text-zinc-900 focus:outline-none">
+                        <button class="bg-zinc-900 px-6 py-2 rounded-md font-bold hover:bg-black transition">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-zinc-900 text-gray-400 py-16 px-6 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto">
+            <!-- Footer Top -->
+            <div class="flex flex-wrap justify-between items-start mb-16 gap-10">
+                <div class="w-full lg:w-1/3">
+                    <div class="flex items-center space-x-2 text-white mb-6">
+                        <svg class="w-10 h-10" viewBox="0 0 24 24" fill="white"><path d="M21 12l-18 4 2-10z"/></svg>
+                        <span class="text-2xl font-black italic">SHOE STORE</span>
+                    </div>
+                    <p class="mb-6 leading-relaxed">The best destination for performance and lifestyle footwear. Step into the future with our 2026 collection.</p>
+                    <div class="flex space-x-4">
+                        <i data-lucide="facebook" class="w-6 h-6 cursor-pointer hover:text-white transition"></i>
+                        <i data-lucide="twitter" class="w-6 h-6 cursor-pointer hover:text-white transition"></i>
+                        <i data-lucide="instagram" class="w-6 h-6 cursor-pointer hover:text-white transition"></i>
+                        <i data-lucide="youtube" class="w-6 h-6 cursor-pointer hover:text-white transition"></i>
+                    </div>
+                </div>
+
+                <div class="bg-orange-600 text-white p-8 rounded-2xl w-full lg:w-1/4">
+                    <h3 class="text-xl font-bold mb-2">Join Our Community</h3>
+                    <p class="text-orange-100 text-sm mb-6">Be the first to know about new releases and drops.</p>
+                    <button class="w-full bg-white text-orange-600 py-3 rounded-lg font-bold hover:bg-gray-100 transition">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-zinc-800 pt-10">
+                <div>
+                    <h4 class="text-white font-bold mb-4">Customer Service</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Shop</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">Men</a></li>
+                        <li><a href="#" class="hover:text-white">Women</a></li>
+                        <li><a href="#" class="hover:text-white">Kids</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">About Us</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white">Our Story</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-16 flex flex-col md:flex-row justify-between items-center border-t border-zinc-800 pt-8 gap-4">
+                <p class="text-sm">© 2026 ShoeStore. All Rights Reserved</p>
+                <div class="flex space-x-4 opacity-50">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" class="h-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" class="h-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" class="h-4">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
